@@ -1,133 +1,60 @@
-# Proyecto - Sistema de Gestión de Estudiantes
+# Actividad 1 - Backend 2 (miercoles) - Cesde
 
-Este es un proyecto backend desarrollado con **Java 21** y **Spring Boot** para la gestión de estudiantes. Incluye una API RESTful que permite crear, leer, actualizar y eliminar (CRUD) registros de estudiantes, persistiendo los datos en una base de datos **PostgreSQL**.
+**Nombre completo:**Sergio Andres Montoya Monsalve
 
-## 🚀 Tecnologías Utilizadas
+# Cuenta de la base de datos creada en prisma.io 
 
-- **Java 21**: Lenguaje de programación.
-- **Spring Boot 3.x**: Framework para el desarrollo de la aplicación.
-- **Maven**: Gestor de dependencias y construcción.
-- **PostgreSQL**: Base de datos relacional.
-- **Lombok**: Librería para reducir el código boilerplate (Getters, Setters, etc.).
-- **Spring Data JPA**: Abstracción para la capa de persistencia.
+![alt text](./cuentabasedatosprisma.png)
 
-## 📋 Requisitos Previos
+# Configuracion de base de datos en prisma.io 
 
-Asegúrate de tener instalado lo siguiente en tu entorno local:
+![configuracion de base de datos en Prisma](./configuracionprisma.png)
 
-- [Java JDK 21](https://www.oracle.com/java/technologies/downloads/#java21)
-- [Maven](https://maven.apache.org/download.cgi)
-- Cliente para probar la API (como [Postman](https://www.postman.com/) o [Insomnia](https://insomnia.rest/)).
+# Videos de la conexion por consola a la base de datos en  Prisma.io 
 
-## ⚙️ Configuración
+[Compilando proyecto](https://youtu.be/KUCehpHGNtY)
 
-La configuración de la base de datos se maneja a través de variables de entorno definidas en un archivo `.env` en la raíz del proyecto.
+[Ejecutando la aplicacion](https://www.youtube.com/watch?v=XoHNg6_kZ9g)
 
-1.  Copia el archivo de ejemplo:
-    ```bash
-    copy .env.example .env
-    ```
+# Evidencias de las pruebas de la api (CRUD)
 
-2.  Edita el archivo `.env` y define tus credenciales:
-    ```ini
-    DB_URL=jdbc:postgresql://localhost:5432/tu_base_de_datos
-    DB_USERNAME=tu_usuario
-    DB_PASSWORD=tu_contraseña
-    ```
+**POST: crear 3 estudiantes** 
 
-> **Nota:** El archivo `.env` está excluido del control de versiones para mantener tus credenciales seguras.
+![creando primer estudiante](<Captura de pantalla 2026-02-15 172528.png>)
 
-## 🛠️ Instalación y Ejecución (Windows)
+![creando segundo estudiante](<Captura de pantalla 2026-02-15 172854.png>)
 
-1.  **Clonar el repositorio**:
-    ```powershell
-    git clone <url-del-repositorio>
-    cd pi
-    ```
+![creando tercer estudiante](<Captura de pantalla 2026-02-15 173320.png>)
 
-2.  **Compilar el proyecto**:
-    Asegúrate de estar en la raíz del proyecto y ejecuta:
-    ```powershell
-    .\mvnw.cmd clean install
-    ```
-    *Nota: Si tienes Maven instalado globalmente, puedes usar simplemente `mvn clean install`.*
+**GET ALL Pruebas de que se guardaron los 3 estudiantes**
 
-3.  **Ejecutar la aplicación**:
-    ```powershell
-    .\mvnw.cmd spring-boot:run
-    ```
+![postman prueba](<Captura de pantalla 2026-02-15 174642.png>)  
 
-    La aplicación se iniciará en el puerto `8080` (por defecto).
+**Prueba en Prisma**
 
-## 🔌 Uso de la API (Endpoints)
+![Prueba en Prisma](<Captura de pantalla 2026-02-15 173921.png>)
 
-La API base es `/api/students`. A continuación se detallan los endpoints disponibles:
 
-### 1. Obtener todos los estudiantes
-- **Método**: `GET`
-- **URL**: `/api/students`
-- **Respuesta**: Lista de estudiantes en formato JSON.
+**GET by ID obteniendo estudiante por su ID**
 
-### 2. Obtener un estudiante por ID
-- **Método**: `GET`
-- **URL**: `/api/students/{id}`
-- **Ejemplo**: `/api/students/1`
+![por id](<Captura de pantalla 2026-02-15 175151.png>)
 
-### 3. Obtener un estudiante por Email
-- **Método**: `GET`
-- **URL**: `/api/students/email/{email}`
-- **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+**GET by Email obteniendo estudiante por email**
 
-### 4. Crear un nuevo estudiante
-- **Método**: `POST`
-- **URL**: `/api/students`
-- **Body (JSON)**:
-    ```json
-    {
-      "firstName": "Juan",
-      "lastName": "Pérez",
-      "email": "juan.perez@example.com",
-      "birthDate": "2000-01-15",
-      "phone": "1234567890"
-    }
-    ```
+![por email](<Captura de pantalla 2026-02-15 180517.png>)
 
-### 5. Actualizar un estudiante
-- **Método**: `PUT`
-- **URL**: `/api/students/{id}`
-- **Ejemplo**: `/api/students/1`
-- **Body (JSON)**:
-    ```json
-    {
-      "firstName": "Juan Carlos",
-      "lastName": "Pérez",
-      "email": "juan.perez@example.com",
-      "birthDate": "2000-01-15",
-      "phone": "0987654321"
-    }
-    ```
+**PUT se le actualiza el phone al estudiante 1**
 
-### 6. Eliminar un estudiante
-- **Método**: `DELETE`
-- **URL**: `/api/students/{id}`
-- **Ejemplo**: `/api/students/1`
+![phone actualizado](<Captura de pantalla 2026-02-15 181642.png>)
 
-## 🧪 Ejecutar Pruebas
+**DELETE : se elimina el estudiante 2**
 
-Para ejecutar las pruebas unitarias y de integración, usa el siguiente comando:
+![eliminado el estudiante 2](<Captura de pantalla 2026-02-15 181930.png>)
 
-```powershell
-.\mvnw.cmd test
-```
 
-## 📂 Estructura del Proyecto
+# Ejecucion de pruebas unitarias y de integracion
 
-```
-src/main/java/com/cesde/pi
-├── controller    # Controladores REST (StudentController)
-├── model         # Entidades JPA (Student)
-├── repository    # Interfaces de Repositorio (StudentRepository)
-├── service       # Lógica de Negocio (StudentService)
-├── dto           # Objetos de Transferencia de Datos
-└── exception     # Manejo de Excepciones Globales
-```
+[test](https://youtu.be/1ZKsRfA2hCI)
+
+
+
