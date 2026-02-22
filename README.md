@@ -1,30 +1,38 @@
-# Actividad 1 - Backend 2 (miercoles) - Cesde
+# Actividad 1 Backend 2(Miercoles) Cesde
 
-**Nombre completo:**Sergio Andres Montoya Monsalve
+## Nombre completo:Sergio Andres Montoya Monsalve
 
 # Cuenta de la base de datos creada en prisma.io 
 
-![alt text](./cuentabasedatosprisma.png)
+![cuenta base de datos](./cuentabasedatosprisma.png)
 
 # Configuracion de base de datos en prisma.io 
 
 ![configuracion de base de datos en Prisma](./configuracionprisma.png)
 
-# Videos de la conexion por consola a la base de datos en  Prisma.io 
+# Videos de la conexion por consola a la base de datos en  Prisma.io
 
+**Compilando**
 [Compilando proyecto](https://youtu.be/KUCehpHGNtY)
 
+
+**Ejecutando la aplicacion, conectando a base de datos y creando servidor**
 [Ejecutando la aplicacion](https://www.youtube.com/watch?v=XoHNg6_kZ9g)
 
 # Evidencias de las pruebas de la api (CRUD)
 
 **POST: crear 3 estudiantes** 
 
+**estudiante 1**
 ![creando primer estudiante](<Captura de pantalla 2026-02-15 172528.png>)
 
+**estudiante 2**
 ![creando segundo estudiante](<Captura de pantalla 2026-02-15 172854.png>)
 
+
+**estudiante 3**
 ![creando tercer estudiante](<Captura de pantalla 2026-02-15 173320.png>)
+
 
 **GET ALL Pruebas de que se guardaron los 3 estudiantes**
 
@@ -54,7 +62,7 @@
 
 # Ejecucion de pruebas unitarias y de integracion
 
-[test](https://youtu.be/1ZKsRfA2hCI)
+[test pruebas unitarias](https://youtu.be/1ZKsRfA2hCI)
 
 
 
