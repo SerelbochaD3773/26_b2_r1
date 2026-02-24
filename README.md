@@ -21,43 +21,45 @@
 
 # Evidencias de las pruebas de la api (CRUD)
 
+**En las imagenes la peticion esta arriba y la repuesta satisfactoria con su codigo respectivo http**
+
 **POST: crear 3 estudiantes** 
 
 **estudiante 1**
-![creando primer estudiante](<Captura de pantalla 2026-02-15 172528.png>)
+![creando primer estudiante](crea-primer-estudiante.png)
 
 **estudiante 2**
-![creando segundo estudiante](<Captura de pantalla 2026-02-15 172854.png>)
+![creando segundo estudiante](crea-segundo-estudiante.png)
 
 
 **estudiante 3**
-![creando tercer estudiante](<Captura de pantalla 2026-02-15 173320.png>)
+![creando tercer estudiante](crea-tercer-estudiante.png)
 
 
 **GET ALL Pruebas de que se guardaron los 3 estudiantes**
 
-![postman prueba](<Captura de pantalla 2026-02-15 174642.png>)  
+![postman prueba](los-tres-estudiantes-creados-en-postman.png)  
 
 **Prueba en Prisma**
 
-![Prueba en Prisma](<Captura de pantalla 2026-02-15 173921.png>)
+![Prueba en Prisma](los-tres-estudiantes-creados.png)
 
 
 **GET by ID obteniendo estudiante por su ID**
 
-![por id](<Captura de pantalla 2026-02-15 175151.png>)
+![por id](get-por-id-estudiante1.png)
 
 **GET by Email obteniendo estudiante por email**
 
-![por email](<Captura de pantalla 2026-02-15 180517.png>)
+![por email](get-por-email-estudiante3.png)
 
 **PUT se le actualiza el phone al estudiante 1**
 
-![phone actualizado](<Captura de pantalla 2026-02-15 181642.png>)
+![phone actualizado](actualizar-phone-estudiante1.png)
 
 **DELETE : se elimina el estudiante 2**
 
-![eliminado el estudiante 2](<Captura de pantalla 2026-02-15 181930.png>)
+![eliminado el estudiante 2](borrar-estudiante2.png)
 
 
 # Ejecucion de pruebas unitarias y de integracion
