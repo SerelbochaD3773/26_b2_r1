@@ -21,7 +21,7 @@
 
 # Evidencias de las pruebas de la api (CRUD)
 
-**En las imagenes la peticion esta arriba y la repuesta satisfactoria con su codigo respectivo http**
+**En las imagenes la peticion esta arriba y la repuesta satisfactoria con su codigo respectivo http abajo de la misma imagen**
 
 **POST: crear 3 estudiantes** 
 
